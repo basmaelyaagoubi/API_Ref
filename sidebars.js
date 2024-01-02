@@ -277,8 +277,24 @@ const sidebars = {
 			id: 'customComponent/structure',
 		},
 		{
-			type: 'doc',
-			id: 'customComponent/apiReference/overview',
+			type: 'category',
+			label: 'API Reference',
+			items: [
+				'customComponent/apiReference/overview',
+				{
+					type: 'category',
+					label: 'Components',
+					items: [
+						'customComponent/apiReference/components/overview',
+					],
+				},
+				'customComponent/apiReference/hooks',
+				'customComponent/apiReference/interfaces',
+				'customComponent/apiReference/providers',
+				'customComponent/apiReference/renderer',
+				'customComponent/apiReference/themes',
+				'customComponent/apiReference/utils',
+			],
 		},
 	],
 	API: [
