@@ -21,13 +21,17 @@ The global project structure of `@ws-ui/webform-editor` is designed to maintain 
     - [**components**](components/overview): Dedicated space for components tailored for web form editing.
     - [**hooks**](hooks): Repository for custom hooks providing specialized functionalities.
     - [**interfaces**](interfaces): TypeScript interfaces defining the structure of data used in the project.
+    - [**mocks**](mocks): Contains simulated versions of dependencies and data, enabling isolated testing of components without relying on external systems.
     - [**providers**](providers): Context providers managing state across the application.
     - [**renderer**](renderer): Components responsible for rendering web forms.
+    - [**StandaloneEditor**](StandaloneEditor): Houses the components, styles, and logic necessary to operate the standalone editor within your application, enabling editing functionalities like code or web form customization independently from other parts of the system.
     - [**themes**](themes): Configuration files specifying theme-related settings.
     - [**utils**](utils): Collection of utility functions used throughout the project.
     - **editor.d.ts**: TypeScript declaration file providing type information for the webform editor. It defines modules for custom components and CSS box shadow parsing.
     - **index.css**: Main stylesheet defining visual aspects, including styling for component inspection, selection, and other UI elements.
     - **index.ts**: Entry point for the project, importing and exporting various modules.
+    - **main.tsx**: Serves as the primary entry point for running the application. It initializes the React app, setting up providers, contexts, and rendering the root component.
+    - **monaco-workers.ts**: Related to the Monaco Editor, used in web projects for code editing functionalities. The workers handle background tasks such as syntax validation or other language features provided by the Monaco Editor.
     - **theme.ts**: Configuration file for Chakra UI theme, extending default theme settings and defining custom colors and fonts.
     - **vite-env.d.ts**: TypeScript declaration file including references to external types related to the project.
     - **Webform.tsx**: Main component for web form editing. It uses Chakra UI, Craft.js, and other providers to create a flexible and extensible web form editor with various features and settings.
